@@ -1,0 +1,149 @@
+body {
+  background-color: #B5BBC7;
+}
+
+@font-palette-values --white {
+  font-family: Honk;
+  base-palette: 7;
+  override-colors: 0 lch(21.7% 60.6 314);
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(1.4rem, calc(5vw + 1rem), 7rem);
+  text-shadow: 3px 0 #541076;
+  transition: text-shadow 0.3s ease;
+  &:hover {
+    text-shadow: 5px 3px #541076;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: clamp(1.4rem, calc(2vw + 1rem), 5rem);
+  text-shadow: 3px 0 #541076;
+  color: #f7fcfd;
+}
+
+.honk-h1 {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+}
+
+.honk-h2 {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 15, "SHLN" 0;
+  font-palette: --white;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+.link-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+}
+
+.link-div {
+  text-align: center;
+  background-color: #f7fcfd;
+  border-radius: 10px;
+  min-width: 200px;
+  max-width: 30vw;
+  padding: 20px;
+  box-shadow: 6px 8px #541076;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  @media (max-width: 1300px) {
+    min-height: 22rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.title-link {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip-img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.tooltip-text {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  margin-top: 0.25rem;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+video {
+  max-width: 45vw;
+  max-height: 35vw;
+  border-radius: 10px;
+}
+
+.video-title {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  margin: 1rem;
+  color: #f7fcfd;
+  text-shadow: 2px 0 #541076;
+  text-align: center;
+}
+
+.video-div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 35vw;
+  max-height: 25vw;
+}
+
+.video-div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 35vw;
+  max-height: 25vw;
+}
+
+p {
+  text-align: center;
+  padding: 20px;
+}
