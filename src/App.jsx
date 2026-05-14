@@ -1,17 +1,33 @@
 import React from "react";
 import GithubTooltip from "./components/GithubTooltip";
 import Header from "./components/Header";
-import LinkCards from "./components/LinkCards"
+import Footer from "./components/Footer";
+import LinkCards from "./components/Link Cards/LinkCards"
 import VideoExamples from "./components/VideoExamples";
+import QualityEngModal from "./components/Modals/QualityEngModal";
+import CourseMaintModal from "./components/Modals/CourseMaintModal";
+import CourseBuildModal from "./components/Modals/CourseBuildModal";
 
 function App() {
+
   return (
     <>
       <Header tooltipId="gh-profile-link" tooltipPlace="right-end" />
       <GithubTooltip tooltipId="gh-profile-link" />
       <LinkCards />
       <VideoExamples />
-      <p>© All content, trademarks, logos, and intellectual property displayed in these videos is the exclusive property of Everfi or their respective owners. These videos are merely being used as examples to display my previous work at the company.</p>
+      <ul>
+        <li>
+          <QualityEngModal />
+        </li>
+        <li>
+          <CourseMaintModal />
+        </li>
+        <li>
+          <CourseBuildModal />
+        </li>
+      </ul>
+      <Footer />
     </>
   );
 }
