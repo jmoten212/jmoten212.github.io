@@ -68,8 +68,8 @@ function QualityEngModal() {
             Quality Engineering
           </Typography>
           <Typography id="modal-description">
-            As a Quality Engineer at Everfi, I tested courses, components and SDK code primarily through automation. 
-            I was a member of the Course Automation team that was responsible for creating and running automated tests that served as the main aspect of integration and regression testing. 
+            As a Quality Engineer at Everfi, I tested course, component and SDK code primarily through automation. 
+            I worked as part of the Course Automation team, which was responsible for creating and running automated tests that served as the main aspect of integration and regression testing. 
             For these automated tests we mainly used Cypress, creating E2E suites that simulated user flow through courses as part of component releases. 
             We also used tools like Circle CI and GitHub Actions to run these tests for CI/CD and Applitools for visual assertion checks. In order to 
             streamline the process of creating the Cypress test files, our team collaborated on a project to create a CLI tool to automate generation of Cypress test files from course structures. 

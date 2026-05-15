@@ -73,9 +73,9 @@ function CourseBuildModal() {
           <Typography id="modal-description">
             As an Engineer on the Course Building Team at Everfi, I helped build over 40 courses for students, financial institutions and business clients that focused 
             on the subjects of financial education, essential life skills education, and workplace compliance training. On these projects, I worked as both 
-            a lead and primary contact where I was responsible for all page/module builds, and as a collaborator where I worked with other Engineers on the team 
-            to meet higher priority deadlines, mianly for larger projects. The workflow typically consisted of taking Design wireframes from the Product team and building pages/modules in alignment with client 
-            visions of structure, content and styling; while also ensuring desired functionality of components and proper pathing throughout the course. These builds were then passed on 
+            a lead where I was the primary contact responsible for all page/module builds, and as a collaborator where I worked alongside other Engineers 
+            to meet higher priority deadlines, usually for larger projects. The workflow typically consisted of taking design wireframes from the Product team and building pages/modules in alignment with client 
+            visions of structure, content and styling, while also ensuring desired functionality of components and proper pathing throughout the course. These builds were then passed on 
             to the Quality Engineering team for final checks before release. This all contributed to building a library of over 100 courses that would go on to reach millions of end users.
           </Typography>
         </Box>
