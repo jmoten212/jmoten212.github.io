@@ -49,7 +49,7 @@ function CourseMaintModal() {
           >
             <CloseIcon />
           </IconButton>
-          <ImageList sx={{ width: '60vw', height: 425 }} cols={1} rowHeight={225}>
+          <ImageList sx={{ width: '60vw', height: 'auto' }} cols={1} >
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
                 <img
@@ -66,7 +66,7 @@ function CourseMaintModal() {
             Course Maintenance
           </Typography>
           <Typography id="modal-description">
-            As an Engineer on the Course Maintenance Team at Everfi, I managed code and fixed bugs within SDK and component 
+            As an Engineer on the Course Maintenance Team at Everfi, I managed code and fixed bugs within the SDK and component 
             libraries that contributed to course builds. The work was mianly in collaboration with the Quality Engineering team, 
             taking bugs that they found and reported and deploying fixes for them within component releases. 
             This work also included API maintenance and resolving issues with Content-Partner and RESTful APIs for user and course data. 

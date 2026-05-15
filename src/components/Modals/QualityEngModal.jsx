@@ -51,7 +51,7 @@ function QualityEngModal() {
           >
             <CloseIcon />
           </IconButton>
-          <ImageList sx={{ width: '60vw', height: 285 }} cols={3} rowHeight={285}>
+          <ImageList sx={{ width: '60vw', height: 'auto' }} cols={3} >
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
                 <img
@@ -69,12 +69,12 @@ function QualityEngModal() {
           </Typography>
           <Typography id="modal-description">
             As a Quality Engineer at Everfi, I tested courses, components and SDK code primarily through automation. 
-            I was a member of the Course Automation team that was responsible for creating and running automated tests that were a major part of release, integration and regression testing. 
+            I was a member of the Course Automation team that was responsible for creating and running automated tests that served as the main aspect of integration and regression testing. 
             For these automated tests we mainly used Cypress, creating E2E suites that simulated user flow through courses as part of component releases. 
             We also used tools like Circle CI and GitHub Actions to run these tests for CI/CD and Applitools for visual assertion checks. In order to 
-            streamline the process of creating the Cypress test files, our team collaborated on a project to create a CLI tool to automate generating Cypress test files from course structures. 
-            The tool took a reusable set of Cypress tests that we created to replicate component structures and placed them in a test file as they appeared in the course according to which 
-            components were mapped where as it read through course structures. This work greatly reduced the amount of time and lift needed to test courses for release and regression testing 
+            streamline the process of creating the Cypress test files, our team collaborated on a project to create a CLI tool to automate generation of Cypress test files from course structures. 
+            The tool took a reusable set of Cypress tests that were created to replicate component structures and placed them in a test file, mirroring as they appeared in the course by reading and 
+            mapping through course structures. This work greatly reduced the amount of time and lift needed to test courses for releases 
             and had a significant impact on overall project delivery times.
           </Typography>
         </Box>
