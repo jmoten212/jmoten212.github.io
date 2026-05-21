@@ -172,23 +172,6 @@ ul {
   list-style-type: none;
 }
 
-/* li {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 30px;
-  margin: 1rem;
-  color: #f7fcfd;
-  text-shadow: 3px 0 #541076;
-  text-align: center;
-  text-shadow: 
-    -0.75px -0.75px 0 #000,  
-     0.75px -0.75px 0 #000,
-    -0.75px  0.75px 0 #000,
-     3.75px  0.75px 0 #541076;
-} */
-
 .modalButton {
   all: unset;
   cursor: pointer;
@@ -232,6 +215,7 @@ img.MuiImageListItem-img {
 #modal-title {
   font-weight: 600;
   font-size: 30px;
+  margin-top: 25px;
 }
 
 #modal-description {
