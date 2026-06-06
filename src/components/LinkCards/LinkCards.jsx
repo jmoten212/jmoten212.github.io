@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import linkInfo from "./linkInfo";
+import "./link-cards.css"
 
 function createLinkCard(link) {
   return (
@@ -8,8 +9,7 @@ function createLinkCard(link) {
       key={link.id}
       title={link.title}
       linkUrl={link.linkUrl}
-      imgSrc={link.imgSrc}
-      altText={link.altText}
+      videoSrc={link.videoSrc}
     />
   );
 }
@@ -17,8 +17,10 @@ function createLinkCard(link) {
 function LinkCards() {
   return(
     <>
-      <h2 className="honk-h2">Recent Projects</h2>
-      <div className="link-cards">{linkInfo.map(createLinkCard)}</div>
+      <section>
+        <img className="everfi-logo" src="/images/everfi_logo.jpg" alt="Everfi logo" />
+        <div className="link-cards-div">{linkInfo.map(createLinkCard)}</div>
+      </section>
     </>
   )
 }

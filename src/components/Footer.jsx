@@ -2,8 +2,11 @@ import React from "react";
 
 function Footer() {
   return (
-    <p>© All content, trademarks, logos, and intellectual property displayed in these Prior Work Project videos and images is the exclusive property of Everfi or their respective owners. These videos and images are merely being used as examples to display my previous work at the company.</p>
+    <section className="footer">
+      <p>© All content, trademarks, logos, and intellectual property displayed in the examples under previous Experience is the exclusive property of Everfi or their respective owners.</p>
+    </section>
   )
+    
 }
 
 export default Footer;

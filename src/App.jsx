@@ -1,32 +1,40 @@
-import React from "react";
-import GithubTooltip from "./components/GithubTooltip";
-import Header from "./components/Header";
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "lenis";
+import IntroScrollZoom from "./components/IntroScrollZoom/IntroScrollZoom";
+import ScrollCards from "./components/ScrollCards/ScrollCards";
+import LinkCards from "./components/LinkCards/LinkCards"
+import PersonalProjects from "./components/PersonalProjects/PersonalProjects";
 import Footer from "./components/Footer";
-import LinkCards from "./components/Link Cards/LinkCards"
-import VideoExamples from "./components/VideoExamples";
-import QualityEngModal from "./components/Modals/QualityEngModal";
-import CourseMaintModal from "./components/Modals/CourseMaintModal";
-import CourseBuildModal from "./components/Modals/CourseBuildModal";
 
 function App() {
 
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const lenis = new Lenis();
+    lenis.on("scroll", () => ScrollTrigger.update());
+
+    let rafId;
+    const raf = (time) => {
+      lenis.raf(time);
+      rafId = requestAnimationFrame(raf);
+    };
+    rafId = requestAnimationFrame(raf);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <>
-      <Header tooltipId="gh-profile-link" tooltipPlace="right-end" />
-      <GithubTooltip tooltipId="gh-profile-link" />
+      <IntroScrollZoom />
+      <ScrollCards />
       <LinkCards />
-      <VideoExamples />
-      <ul>
-        <li>
-          <QualityEngModal />
-        </li>
-        <li>
-          <CourseMaintModal />
-        </li>
-        <li>
-          <CourseBuildModal />
-        </li>
-      </ul>
+      <PersonalProjects />
       <Footer />
     </>
   );
