@@ -8,7 +8,7 @@ const linkInfo = [
   {
     id: 2,
     title: "Course Maintenance",
-    videoSrc: "/videos/sample.mp4",
+    videoSrc: "/videos/data_sci.mp4",
     altText: "A preview screenshot of jmoten212's nba-playoff-stats-api site",
   },
   {
