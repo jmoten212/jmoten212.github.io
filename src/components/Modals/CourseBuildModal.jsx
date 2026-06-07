@@ -11,9 +11,9 @@ const style = {
   maxWidth: '60vw',
   maxHeight: '85vh',
   overflowY: 'auto',
-  bgcolor: '#f7fcfd',
-  border: '2px solid #541076',
-  borderRadius: '10px',
+  bgcolor: '#fefefe',
+  border: '2px solid #252627',
+  borderRadius: ' 0.35em',
   boxShadow: 24,
   p: 4,
 };
@@ -49,12 +49,12 @@ function CourseBuildModal() {
               position: 'absolute',
               right: 4,
               top: 4,
-              color: '#541076',
+              color: '#252627',
             }}
           >
             <CloseIcon />
           </IconButton>
-          <ImageList sx={{ width: '60vw', height: 'auto' }} cols={3} >
+          {/* <ImageList sx={{ width: '60vw', height: 'auto' }} cols={3} >
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
                 <img
@@ -66,7 +66,7 @@ function CourseBuildModal() {
                 />
               </ImageListItem>
             ))}
-          </ImageList>
+          </ImageList> */}
           <Typography id="modal-title" variant="h6" component="h2" className="sans-h2">
             Course Building
           </Typography>

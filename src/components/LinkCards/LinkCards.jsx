@@ -8,7 +8,6 @@ function createLinkCard(link) {
     <Card
       key={link.id}
       title={link.title}
-      linkUrl={link.linkUrl}
       videoSrc={link.videoSrc}
     />
   );
@@ -20,6 +19,7 @@ function LinkCards() {
       <section>
         <img className="everfi-logo" src="/images/everfi_logo.jpg" alt="Everfi logo" />
         <div className="link-cards-div">{linkInfo.map(createLinkCard)}</div>
+        {/* <p>© All content, trademarks, logos, and intellectual property displayed in the examples under previous Experience is the exclusive property of Everfi or their respective owners.</p> */}
       </section>
     </>
   )

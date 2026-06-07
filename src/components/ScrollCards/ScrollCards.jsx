@@ -100,8 +100,8 @@ function ScrollCards() {
           <h1>Who Am I?</h1>
           <p>
             A performance-driven Software Engineer specializing in automated testing and full-stack 
-            development for large-scale SaaS platforms. Expert in debugging and maintaining JavaScript, 
-            React, and Node-based SDKs and component libraries used by millions. Dedicated to elevating 
+            development for large-scale SaaS platforms. An expert in debugging and maintaining JavaScript, 
+            React, and Node-based SDKs and component libraries, who is dedicated to elevating 
             user experience by replacing manual processes with automated workflows, significantly 
             accelerating project delivery timelines.
           </p>
