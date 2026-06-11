@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { titleSVG } from "./title.js";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import "./intro.css";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -11,6 +12,8 @@ function IntroScrollZoom() {
   const containerRef = useRef(null);
   const spotlightRef = useRef(null);
   const headerRef = useRef(null);
+  const outroRef = useRef(null);
+  const nameRef = useRef(null);
 
   useEffect(() => {
 
@@ -28,9 +31,6 @@ function IntroScrollZoom() {
     if (!svg || !spotlightRef.current || !headerRef.current) {
       return () => {};
     }
-
-    const defs = document.createElementNS(SVG_NAMESPACE, "defs");
-    svg.insertBefore(defs, svg.firstChild);
 
     const spotlightHeader = headerRef.current;
     let headerSplit = null;
@@ -79,8 +79,26 @@ function IntroScrollZoom() {
       },
     });
 
+    const outroTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: outroRef.current,
+        start: "top top",
+        end: () => "+=" + window.innerHeight * 1,
+        scrub: 1,
+        pin: true,
+        pinSpacing: false,
+      },
+    });
+
+    outroTl.to(nameRef.current, {
+      y: -window.innerHeight * 1,
+      opacity: 1,
+      duration: 1,
+    }, 0);
+
     return () => {
       scrollTrigger.kill();
+      outroTl.scrollTrigger.kill();
       if (headerSplit) {
         headerSplit.revert();
       }
@@ -92,23 +110,20 @@ function IntroScrollZoom() {
       <div className="intro-scroll-zoom">
         <section className="intro">
           <h1>Welcome</h1>
-        </section>
-
-        <section className="intro">
-          <h1>To</h1>
+          {/* <KeyboardArrowDownIcon className="downIcon"/> */}
         </section>
 
         <section className="spotlight" ref={spotlightRef}>
           <div className="svg-container" ref={containerRef}></div>
 
           <div className="spotlight-header">
-            <h1 ref={headerRef}>A software engineering portfolio for</h1>
+            <h1 ref={headerRef}>This is a software engineering portfolio for</h1>
           </div>
         </section>
 
-        <section className="outro">
+        <section className="outro" ref={outroRef}>
           <div className="name-img-title">
-            <h1 className="name-title">James Moten</h1>
+            <h1 className="name-title" ref={nameRef}>James Moten</h1>
             <img src="/images/JMoten.png" alt="James Moten illustration" />
           </div>
         </section>

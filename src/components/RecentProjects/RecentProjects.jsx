@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./personal-projects.css";
+import "./recent-projects.css";
 
 const projects = [
   {
@@ -16,7 +16,7 @@ const projects = [
   }
 ];
 
-function PersonalProjects() {
+function RecentProjects() {
   const settings = {
     dots: true,
     infinite: true,
@@ -25,17 +25,17 @@ function PersonalProjects() {
     slidesToScroll: 1,
     adaptiveHeight: true,
     arrows: true,
-    className: "personal-projects__slider",
+    className: "recent-projects__slider",
   };
 
   return (
-    <section className="personal-projects">
-      <div className="personal-projects__inner">
-        <h1 className="personal-projects__title">Personal Projects</h1>
+    <section className="recent-projects">
+      <div className="recent-projects__inner">
+        <h1 className="recent-projects__title">Recent Projects</h1>
 
         <Slider {...settings}>
           {projects.map((project, index) => (
-            <div key={index} className="personal-projects__slide">
+            <div key={index} className="recent-projects__slide">
               <div className="project-card">
                 <iframe src={project.href} frameborder="0"></iframe>
                 <h3>{project.title}</h3>
@@ -52,4 +52,4 @@ function PersonalProjects() {
   );
 }
 
-export default PersonalProjects;
+export default RecentProjects;

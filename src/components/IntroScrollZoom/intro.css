@@ -19,13 +19,25 @@
   overflow: hidden;
 }
 
-.intro,
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #fefefe;
+}
+
 .outro {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: #fefefe;
+}
+
+.intro .downIcon {
+ font-size: 3.5rem;
 }
 
 .spotlight {

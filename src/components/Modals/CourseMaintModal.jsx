@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Modal, Box, Typography, ButtonBase, ImageList, ImageListItem, IconButton } from '@mui/material';
+import React from 'react';
+import { Modal, Box, Typography, ImageList, ImageListItem, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
 // styling for modal content <Box />
@@ -8,7 +8,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  maxWidth: '60vw',
+  width: 'clamp(250px, 60vw, 800px)',
   maxHeight: '85vh',
   overflowY: 'auto',
   bgcolor: '#fefefe',
@@ -18,65 +18,45 @@ const style = {
   p: 4,
 };
 
-const itemData = [
-  { img: '/images/maintenance-1.png', altText: 'Screenshot of an Everfi course page with Google Chrome Developer Tools open' },
-];
+// const imageData = [
+//   { img: '/images/maintenance-1.png', altText: 'Screenshot of an Everfi course page with Google Chrome Developer Tools open' },
+// ];
 
-function CourseMaintModal() {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
+function CourseMaintModal({ open, onClose }) {
   return (
-    <div>
-      <ButtonBase onClick={handleOpen} variant="contained" className="modalButton">Course Maintenance</ButtonBase>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-title"
-        aria-describedby="modal-description"
-      >
-        <Box sx={style}>
-          <IconButton
-            aria-label="close"
-            onClick={handleClose}
-            sx={{
-              position: 'absolute',
-              right: 4,
-              top: 4,
-              color: '#252627',
-            }}
-          >
-            <CloseIcon />
-          </IconButton>
-          {/* <ImageList sx={{ width: '60vw', height: 'auto' }} cols={1} >
-            {itemData.map((item) => (
-              <ImageListItem key={item.img}>
-                <img
-                  // srcSet={`${item.img}?w=100&h=100&fit=crop&auto=format&dpr=2 2x`}
-                  src={`${item.img}`}
-                  alt={item.altText}
-                  loading="lazy"
-                  style={{ objectFit: 'contain' }}
-                />
-              </ImageListItem>
-            ))}
-          </ImageList> */}
-          <Typography id="modal-title" variant="h6" component="h2" className="sans-h2">
-            Course Maintenance
-          </Typography>
-          <Typography id="modal-description">
-            As an Engineer on the Course Maintenance Team at Everfi, I managed code and fixed bugs within the SDK and component 
-            libraries that contributed to course builds. The work was in close collaboration with the Quality Engineering team, 
-            taking bugs that they found and reported and deploying fixes for them within component releases. 
-            Our work responsibilities also included API maintenance and resolving issues with Content-Partner and RESTful APIs for user and course data. 
-            As part of course and component release cycles, bug fixes were added and deployed depending on priority, sometimes warranting a hotfix or patched release. 
-            Our work also included implementing component unit tests to further shift the development cycle left and ensure consistent and desired 
-            functionality amongst maintenance and code changes. 
-          </Typography>
-        </Box>
-      </Modal>
-    </div>
+    <Modal
+      open={open}
+      onClose={onClose}
+      aria-labelledby="modal-title"
+      aria-describedby="modal-description"
+    >
+      <Box sx={style}>
+        <IconButton
+          aria-label="close"
+          onClick={onClose}
+          sx={{
+            position: 'absolute',
+            right: 4,
+            top: 4,
+            color: '#252627',
+          }}
+        >
+          <CloseIcon />
+        </IconButton>
+        <Typography id="modal-title" variant="h6" component="h2" className="sans-h2">
+          Course Maintenance
+        </Typography>
+        <Typography id="modal-description">
+          As an Engineer on the Course Maintenance Team at Everfi, I managed code and fixed bugs within the SDK and component 
+          libraries that contributed to course builds. The work was in close collaboration with the Quality Engineering team, 
+          taking bugs that they found and reported and deploying fixes for them within component releases. 
+          Our work responsibilities also included API maintenance and resolving issues with Webhook and RESTful APIs for user and course data. 
+          As part of course and component release cycles, bug fixes were added and deployed depending on priority, sometimes warranting a hotfix or patched release. 
+          Our work also included implementing component unit tests to further shift the development cycle left and ensure consistent and desired 
+          functionality amongst maintenance and code changes. 
+        </Typography>
+      </Box>
+    </Modal>
   );
 }
 

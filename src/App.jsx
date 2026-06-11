@@ -5,7 +5,7 @@ import Lenis from "lenis";
 import IntroScrollZoom from "./components/IntroScrollZoom/IntroScrollZoom";
 import ScrollCards from "./components/ScrollCards/ScrollCards";
 import LinkCards from "./components/LinkCards/LinkCards"
-import PersonalProjects from "./components/PersonalProjects/PersonalProjects";
+import RecentProjects from "./components/RecentProjects/RecentProjects";
 import Footer from "./components/Footer";
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
       <IntroScrollZoom />
       <ScrollCards />
       <LinkCards />
-      <PersonalProjects />
+      <RecentProjects />
       <Footer />
     </>
   );

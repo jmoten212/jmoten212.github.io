@@ -24,10 +24,25 @@ body {
 
 .footer p {
   text-align: center;
-  padding: 20px;
-  font-size: 0.75rem;
+  padding: 20px 0px 10px 0px;
+  font-size: 0.85rem;
 }
 
 a {
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.profile-links img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px 20px 5px;
 }

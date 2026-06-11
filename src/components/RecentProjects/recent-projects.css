@@ -1,26 +1,26 @@
-.personal-projects {
+.recent-projects {
   padding: 4rem 2rem;
   background-color: #fefefe;
 }
 
-.personal-projects__inner {
+.recent-projects__inner {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.personal-projects__title {
+.recent-projects__title {
   font-size: clamp(2.5rem, 4vw, 4rem);
   margin-bottom: 1.75rem;
   text-align: center;
   color: #1e1e1e
 }
 
-.personal-projects__slider {
+.recent-projects__slider {
   margin: 0 auto;
   padding: 20px;
 }
 
-.personal-projects__slide {
+.recent-projects__slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,31 +73,31 @@
   background: #3c3c3c;
 }
 
-.personal-projects .slick-prev,
-.personal-projects .slick-next {
+.recent-projects .slick-prev,
+.recent-projects .slick-next {
   z-index: 2;
   color: #1e1e1e;
 }
 
-.personal-projects .slick-slide {
+.recent-projects .slick-slide {
   outline: none;
 }
 
-.personal-projects .slick-dots {
+.recent-projects .slick-dots {
   margin-top: 10rem;
 }
 
-.personal-projects .slick-dots li button:before {
+.recent-projects .slick-dots li button:before {
   font-size: 14px;
   color: #3c3c3c;
 }
 
-.personal-projects .slick-dots li.slick-active button:before {
+.recent-projects .slick-dots li.slick-active button:before {
   color: #1e1e1e;
 }
 
-.personal-projects .slick-prev:before, 
-.personal-projects .slick-next:before {
+.recent-projects .slick-prev:before, 
+.recent-projects .slick-next:before {
     color: #1e1e1e !important; 
     opacity: 1 !important;
 }
