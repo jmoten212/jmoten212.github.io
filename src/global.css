@@ -10,22 +10,11 @@ body {
   font-family: "Barlow Condensed", sans-serif;
 }
 
-.footer {
-  background-color: #1e1e1e;
-  color: #fefefe;
-}
-
 .everfi-logo {
     display: flex;
     align-items: center;
     max-width: 350px;
     max-height: 180px;
-}
-
-.footer p {
-  text-align: center;
-  padding: 20px 0px 10px 0px;
-  font-size: 0.85rem;
 }
 
 a {
@@ -35,10 +24,33 @@ a {
   }
 }
 
+
+/* <--- footer styling ---> */
+
+
+.footer {
+  background-color: #1e1e1e;
+  color: #fefefe;
+}
+
+.footer p {
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+  font-size: 0.85rem;
+}
+
 .profile-links {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+.profile-links a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  &:hover {   
+    transform: translateY(-2px);
+  }
 }
 
 .profile-links img {

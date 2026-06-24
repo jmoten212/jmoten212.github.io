@@ -50,7 +50,7 @@ function LinkCards() {
           ))}
         </div>
         {renderModal()}
-        {/* <p>© All content, trademarks, logos, and intellectual property displayed in the examples under previous Experience is the exclusive property of Everfi or their respective owners.</p> */}
+        <p className="footer-disclaimer">© All content, trademarks, logos, and intellectual property displayed in the examples above are the exclusive property of Everfi or their respective owners.</p>
       </section>
     </>
   );

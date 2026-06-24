@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
 }
 
 .link-card {
@@ -47,9 +47,16 @@
 }
 
 .everfi-logo {
-  width: 250px;
-  height: 130px;
+  width: 220px;
+  height: 115px;
 }
+
+.footer-disclaimer {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 8rem;
+}
+
 
 /* <--- modal temp styling ---> */
 

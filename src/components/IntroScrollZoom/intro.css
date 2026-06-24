@@ -59,7 +59,7 @@
   left: 50%;
   transform: translateX(-50%);
   right: 50%;
-  max-width: 95vw;
+  max-width: 75vw;
 }
 
 .spotlight-header {
@@ -88,6 +88,10 @@
   .intro h1,
   .outro h1 {
     width: 75%;
+  }
+
+  .svg-container svg {
+    max-width: 95vw;
   }
 
   .spotlight-header {

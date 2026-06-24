@@ -2,20 +2,17 @@ const linkInfo = [
   {
     id: 1,
     title: "Quality Engineering",
-    videoSrc: "/videos/cypress_run.mp4",
-    altText: "A preview screenshot of jmoten212's metronome-drum-machine React app",
+    videoSrc: "/videos/cypress_run.mp4"
   },
   {
     id: 2,
     title: "Course Maintenance",
-    videoSrc: "/videos/data_sci.mp4",
-    altText: "A preview screenshot of jmoten212's nba-playoff-stats-api site",
+    videoSrc: "/videos/maintenance.mp4"
   },
   {
     id: 3,
     title: "Course Building",
-    videoSrc: "/videos/data_sci.mp4",
-    altText: "A preview screenshot of jmoten212's nba-playoff-stats-api site",
+    videoSrc: "/videos/data_sci.mp4"
   }
 ];
 

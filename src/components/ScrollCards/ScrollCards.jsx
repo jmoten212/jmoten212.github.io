@@ -24,20 +24,20 @@ const Card = ({ title, copy, index }) => {
 function ScrollCards() {
   const cards = [
     {
-      title: "Product Building",
-      copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      title: "Product Development",
+      copy: "I have experience developing diverse software projects across the entire stack, from individual components to end-to-end user experiences. By focusing on efficiency and proper system flow, I ensure every product meets strict design conventions and ADA accessibility standards. Additionally, I collaborate seamlessly with cross-functional teams and key stakeholders to deliver feasible, high-quality builds that align with project goals.",
     },
     {
       title: "Code Maintenance",
-      copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      copy: "I possess extensive experience maintaining post-release software and engineering bug fixes at both the component and page level to ensure security, efficiency, and alignment with user needs. I excel at analyzing and comprehending legacy codebases, allowing for a reduction of technical debt, implementation pf modern best practices with thorough documentation, and a strategic re-engineering of systems, if needed. Additionally, I emphasize leveraging robust dependency management and version control workflows to maintain codebase integrity and streamline ongoing development.",
     },
     {
       title: "Automated Testing",
-      copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      copy: "I am highly proficient in writing and executing unit, integration, and end-to-end tests across a variety of frameworks, including Mocha, Jest, Cypress, and Selenium. To accelerate release cycles, I strive to seamlessly integrate these testing suites into automated CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions. This implementation provides immediate visibility into build stability, ensuring high-quality deployments while significantly reducing time-to-market.",
     },
     {
       title: "API Development",
-      copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      copy: "I specialize in creating and maintaining secure, high-performance Webhooks and RESTful APIs in both JavaScript and TypeScript, most frequently utilizing Express with EJS. My backend experience extends to data management, where I've designed and structured data in JSON and YAML formats using PostgreSQL and AWS database services. Throughout development, I place a strong emphasis on seamless system integration, optimized data bundling, and enhanced security controls.",
     },
   ];
 
@@ -103,7 +103,8 @@ function ScrollCards() {
             full-stack development and automated testing for large-scale SaaS platforms. An expert 
             in debugging and maintaining JavaScript, React, and Node-based SDKs and component libraries, 
             who is dedicated to elevating user experience by replacing manual processes with automated 
-            workflows, significantly accelerating project delivery timelines.
+            workflows, significantly accelerating project delivery timelines. Here is a breakdown of my 
+            web development knowledge and experiecnce by core focus areas:
           </p>
         </div>
       </section>

@@ -14,7 +14,7 @@ const style = {
   overflowY: 'auto',
   bgcolor: '#fefefe',
   border: '2px solid #252627',
-  borderRadius: ' 0.35em',
+  borderRadius: '0',
   boxShadow: 24,
   p: 4,
 };
@@ -59,7 +59,7 @@ function CourseBuildModal({ open, onClose }) {
           to meet higher priority deadlines, usually for larger projects. The workflow typically consisted of taking design wireframes from the Product team and building pages/modules in alignment with client 
           visions of structure, content and styling, while also ensuring desired functionality of components and proper pathing throughout the course. These builds were then passed on 
           to the Quality Engineering team for final checks before release. This all contributed to building a library of over 100 courses that would go on to reach millions of end users. A few examples of 
-          course builds can be found here -
+          these course builds can be found here -
           <a href="https://demofi.everfi.com/" target="_blank" className='demofi-link'> https://demofi.everfi.com/</a>
         </Typography>
       </Box>

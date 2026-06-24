@@ -19,8 +19,8 @@ function IntroScrollZoom() {
 
     const SVG_NAMESPACE = "http://www.w3.org/2000/svg";
     const settings = {
-      finalZoomScale: 35,
-      zoomFocusPoint: "52.4% 52%",
+      finalZoomScale: 40,
+      zoomFocusPoint: "52.4% 53%",
     };
 
     if (containerRef.current) {

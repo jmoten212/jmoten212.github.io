@@ -6,12 +6,12 @@ import "./recent-projects.css";
 const projects = [
   {
     title: "Metronome Drum Machine",
-    description: "A responsive React audio sequencer with tempo controls, keyboard input, and polished UX for rhythm practice.",
+    description: "A responsive React audio sequencer with a metronome meant to create a casual, interactive user experience.",
     href: "https://jmoten212.github.io/metronome-drum-machine/"
   },
   {
     title: "NBA Playoff Stats API",
-    description: "A stats dashboard built around a custom NBA playoffs API, with interactive filtering and performance-focused UI.",
+    description: "A stats dashboard built around a custom API meant to track the top players and their stats in the 2026 NBA playoffs.",
     href: "https://jmoten212.github.io/nba-playoff-stats-api/"
   }
 ];

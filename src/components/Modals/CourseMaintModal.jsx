@@ -13,7 +13,7 @@ const style = {
   overflowY: 'auto',
   bgcolor: '#fefefe',
   border: '2px solid #252627',
-  borderRadius: ' 0.35em',
+  borderRadius: '0',
   boxShadow: 24,
   p: 4,
 };
@@ -50,7 +50,7 @@ function CourseMaintModal({ open, onClose }) {
           As an Engineer on the Course Maintenance Team at Everfi, I managed code and fixed bugs within the SDK and component 
           libraries that contributed to course builds. The work was in close collaboration with the Quality Engineering team, 
           taking bugs that they found and reported and deploying fixes for them within component releases. 
-          Our work responsibilities also included API maintenance and resolving issues with Webhook and RESTful APIs for user and course data. 
+          Our work responsibilities also included API maintenance and resolving issues with Webhooks and RESTful APIs for user and course data. 
           As part of course and component release cycles, bug fixes were added and deployed depending on priority, sometimes warranting a hotfix or patched release. 
           Our work also included implementing component unit tests to further shift the development cycle left and ensure consistent and desired 
           functionality amongst maintenance and code changes. 

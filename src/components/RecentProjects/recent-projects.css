@@ -85,6 +85,7 @@
 
 .recent-projects .slick-dots {
   margin-top: 10rem;
+  width: 96.5%;
 }
 
 .recent-projects .slick-dots li button:before {
