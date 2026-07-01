@@ -102,3 +102,7 @@
     color: #1e1e1e !important; 
     opacity: 1 !important;
 }
+
+.project-card iframe {
+   border-bottom: 2px solid #252627;
+}

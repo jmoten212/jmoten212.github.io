@@ -13,7 +13,7 @@
 }
 
 .scroll-cards p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
@@ -24,7 +24,7 @@
   position: relative;
   height: 100vh;
   width: clamp(200px, 50vw, 800px);
-  padding: 2em;
+  padding: 2em 2em 2em 6em;
 }
 
 .scroll-cards-intro h1 {
@@ -32,7 +32,7 @@
 }
 
 .scroll-cards-intro p {
-  font-size: clamp(2.5px, calc(0.1vw + 1rem), 25px);;
+  font-size: clamp(2.5px, calc(0.2vw + 1rem), 25px);;
 }
 
 .scroll-cards-outro {
@@ -57,7 +57,7 @@
 }
 
 .scroll-cards-outro h1 {
-  margin: 20px 0 0 0;
+  margin: 35px 0 0 0;
   font-size: clamp(3rem, 3vw, 5rem);
 }
 
@@ -121,5 +121,9 @@
 
   .card-img {
     display: none;
+  }
+
+  .scroll-cards-intro {
+    padding: 2em 2em 2em 3em;
   }
 }
