@@ -103,8 +103,8 @@ function ScrollCards() {
             full-stack development and automated testing for large-scale SaaS platforms. An expert 
             in debugging and maintaining JavaScript, React, and Node-based SDKs and component libraries, 
             who is dedicated to elevating user experience by replacing manual processes with automated 
-            workflows, significantly accelerating project delivery timelines. Below is a breakdown of my  
-            knowledge and experience into a few core areas:
+            workflows, significantly accelerating project delivery timelines. Below are a few core areas to 
+            further breakdown my knowledge and experience in software development:
           </p>
         </div>
       </section>

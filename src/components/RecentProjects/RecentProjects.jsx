@@ -6,7 +6,7 @@ import "./recent-projects.css";
 const projects = [
   {
     title: "World Cup Web Scraper",
-    description: "(Work In Progress) A web scraper built with Playwright that utilizes a Node server to scrape ESPN World Cup stats.",
+    description: "(Work In Progress) A web scraper built with Playwright that utilizes a Node server to scrape ESPN stats for the 2026 FIFA World Cup.",
     href: "https://jmoten212.github.io/world-cup-web-scraper/"
   },
   {
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "NBA Playoff Stats API",
-    description: "A relatively simple dashboard built around a custom Express API meant to track the top players and their stats from the 2026 NBA playoffs.",
+    description: "A stats dashboard built around a custom Express API meant to track the top players from the 2026 NBA playoffs.",
     href: "https://jmoten212.github.io/nba-playoff-stats-api/"
   }
 ];
