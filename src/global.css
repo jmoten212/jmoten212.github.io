@@ -28,7 +28,7 @@ a {
 /* <--- footer styling ---> */
 
 
-.footer {
+body .footer {
   background-color: #1e1e1e;
   color: #fefefe;
 }

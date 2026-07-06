@@ -48,11 +48,11 @@ function CourseMaintModal({ open, onClose }) {
         </Typography>
         <Typography id="modal-description">
           As an Engineer on the Course Maintenance Team at Everfi, I managed code and fixed bugs within the SDK and component 
-          libraries that contributed to course builds. The work was in close collaboration with the Quality Engineering team, 
-          taking bugs that they found and reported and deploying fixes for them within component releases. 
+          libraries that contributed to course builds. The work was in close collaboration with the Quality Engineering Team, 
+          taking bugs that they found and reported, and deploying fixes for them within component releases. 
           Our work responsibilities also included API maintenance and resolving issues with Webhooks and RESTful APIs for user and course data. 
           As part of course and component release cycles, bug fixes were added and deployed depending on priority, sometimes warranting a hotfix or patched release. 
-          Our work also included implementing component unit tests to further shift the development cycle left and ensure consistent and desired 
+          Our work also included creating and implementing component unit tests to further shift the development cycle left, and ensure consistent and desired 
           functionality amongst maintenance and code changes. 
         </Typography>
       </Box>

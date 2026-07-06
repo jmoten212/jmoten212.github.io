@@ -29,15 +29,15 @@ function ScrollCards() {
     },
     {
       title: "Code Maintenance",
-      copy: "I have comprehensive knowledge on the subjects of maintaining post-release software and engineering bug fixes to ensure security, efficiency, and alignment with user needs. I excel at analyzing and comprehending legacy codebases, allowing for a reduction of technical debt, implementation pf modern best practices with thorough documentation, and a strategic re-engineering of systems, if needed. Additionally, I emphasize leveraging robust dependency management and version control workflows to maintain codebase integrity and streamline ongoing development.",
+      copy: "I have comprehensive knowledge on the subjects of maintaining post-release software and engineering bug fixes to ensure security, efficiency, and alignment with user needs. I excel at analyzing and comprehending legacy codebases, allowing for a reduction of technical debt, an implementation of modern best practices with thorough documentation, and a strategic re-engineering of systems, if needed. Additionally, I believe leveraging robust dependency management and version control workflows should be emphasized to maintain codebase integrity and streamline ongoing development.",
     },
     {
       title: "Automated Testing",
-      copy: "I am highly proficient in writing and executing unit, integration, and end-to-end tests across a variety of frameworks, including Mocha, Jest, Cypress, and Playwright. To accelerate release cycles, I work to seamlessly integrate these testing suites into automated CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions. This implementation provides immediate visibility into build stability, ensuring high-quality deployments while significantly reducing time-to-market.",
+      copy: "I am highly proficient in writing and executing unit, integration, and end-to-end automated tests across a variety of frameworks, including Mocha, Jest, Cypress, and Playwright. To accelerate release cycles, I work to seamlessly integrate these testing suites into automated CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions for those checks. This implementation provides immediate visibility into build stability, ensuring high-quality deployments while significantly reducing time-to-market.",
     },
     {
       title: "API Development",
-      copy: "I specialize in creating and maintaining secure, high-performance Webhooks and RESTful APIs in both JavaScript and TypeScript, most frequently utilizing Express with EJS. My backend experience extends to data management, where I've designed and structured data in JSON and YAML formats using PostgreSQL and AWS database services. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls.",
+      copy: "I specialize in creating and maintaining secure, high-performance Webhooks and RESTful APIs in both JavaScript and TypeScript, having most frequently utilized Express with EJS for this. My backend experience extends to data management, where I've designed and structured data in JSON and YAML formats using PostgreSQL and AWS database services. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls.",
     },
   ];
 

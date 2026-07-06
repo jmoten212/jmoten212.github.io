@@ -28,7 +28,7 @@
 }
 
 .scroll-cards-intro h1 {
-  font-size: clamp(10px, 3rem, 50px);
+  font-size: clamp(10px, 3.5rem, 50px);
 }
 
 .scroll-cards-intro p {
@@ -58,7 +58,7 @@
 
 .scroll-cards-outro h1 {
   margin: 35px 0 0 0;
-  font-size: clamp(3rem, 3vw, 5rem);
+  font-size: clamp(10px, 3.5rem, 50px);
 }
 
 .cards {
@@ -89,29 +89,33 @@
   align-items: center;
 }
 
-#card-1 .card-inner {
+body #card-1 .card-inner {
   background-color: #c3abff;
 }
 
-#card-2 .card-inner {
+body #card-2 .card-inner {
   background-color: #fefefe;
 }
 
-#card-3 .card-inner {
+body #card-3 .card-inner {
   background-color: #fed35b;
 }
 
-#card-4 .card-inner {
+body #card-4 .card-inner {
   background-color: #1e1e1e;
   color: #fefefe;
 }
 
 @media (max-width: 900px) {
-  h1 {
-    margin-bottom: 4rem;
+  p {
+    font-size: 0.9rem;
   }
 
-  p {
+  .scroll-cards h1 {
+    margin-bottom: 3rem;
+  }
+
+  .scroll-cards p {
     font-size: 1rem;
   }
 
@@ -125,5 +129,13 @@
 
   .scroll-cards-intro {
     padding: 2em 2em 2em 3em;
+  }
+
+  .scroll-cards-intro p {
+    font-size: 0.9rem;
+  }
+
+  .footer-disclaimer {
+    margin: 0 2rem 0 2rem;
   }
 }
