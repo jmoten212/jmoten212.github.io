@@ -15,8 +15,8 @@ const projects = [
     href: "https://jmoten212.github.io/metronome-drum-machine/"
   },
   {
-    title: "NBA Playoff Stats API",
-    description: "A stats dashboard built around a custom Express API meant to track the top players from the 2026 NBA Playoffs.",
+    title: "NBA Playoffs Stat Tracker",
+    description: "A stats dashboard built around an Express API integration of a Rapid API meant to track the top players from the 2026 NBA Playoffs.",
     href: "https://jmoten212.github.io/nba-playoff-stats-api/"
   }
 ];
