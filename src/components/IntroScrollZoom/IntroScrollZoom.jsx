@@ -108,10 +108,9 @@ function IntroScrollZoom() {
   return (
     <>
       <div className="intro-scroll-zoom">
-        <section className="intro">
+        {/* <section className="intro">
           <h1>Welcome</h1>
-          {/* <KeyboardArrowDownIcon className="downIcon"/> */}
-        </section>
+        </section> */}
 
         <section className="spotlight" ref={spotlightRef}>
           <div className="svg-container" ref={containerRef}></div>
