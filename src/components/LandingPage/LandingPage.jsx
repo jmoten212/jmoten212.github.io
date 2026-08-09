@@ -97,28 +97,6 @@ function LandingPage() {
       4.65,
     );
 
-    tl.to(
-      "nav a .word",
-      {
-        y: "0%",
-        duration: 1,
-        ease: "hop",
-        stagger: 0.075,
-      },
-      4.75,
-    );
-
-    tl.to(
-      ".hero-footer p .word",
-      {
-        y: "0%",
-        duration: 1,
-        ease: "hop",
-        stagger: 0.075,
-      },
-      4.75,
-    );
-
     return () => {
       tl.kill();
       preloaderHeaderSplit.revert();

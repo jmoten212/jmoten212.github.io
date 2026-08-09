@@ -41,6 +41,7 @@
   height: 800px;
   width: 100%;
   object-fit: cover;
+  border-bottom: 2px solid #252627;
 }
 
 .project-card h3 {
@@ -99,10 +100,15 @@
 
 .recent-projects .slick-prev:before, 
 .recent-projects .slick-next:before {
-    color: #1e1e1e !important; 
-    opacity: 1 !important;
+  color: #1e1e1e !important; 
+  opacity: 1 !important;
 }
 
-.project-card iframe {
-   border-bottom: 2px solid #252627;
+@media (max-width: 900px) {
+  .project-card iframe {
+    height: 70vh;
+  }
+  .recent-projects__slider {
+    padding: 20px 0px 20px 0px;
+  }
 }
