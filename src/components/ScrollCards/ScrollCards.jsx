@@ -25,11 +25,11 @@ function ScrollCards() {
   const cards = [
     {
       title: "Product Development",
-      copy: "I have extensive experience with developing diverse software projects across the entire stack, from the individual component level to the end-to-end user level. By focusing on efficiency and proper system flow, I work to ensure every product meets design conventions and ADA accessibility standards. Through previous work on a variety of projects, I've gained valuable collborative work experience, from cross-functional teams to key stakeholders; this has allowed me to consistently deliver feasible, high-quality builds that align with project goals.",
+      copy: "I have extensive experience with developing diverse software projects across the entire stack, from the individual component level to the end-to-end user level. By focusing on efficiency and proper system flow, I work to ensure every product meets design conventions and accessibility standards. Through previous work on a variety of projects, I've gained valuable experience in work collaboration, from cross-functional teams to key stakeholders; this has allowed me to consistently deliver feasible, high-quality builds that align with project goals.",
     },
     {
       title: "Code Maintenance",
-      copy: "I specialize in maintaining post-release software and engineering bug fixes to ensure security, efficiency, and alignment with user needs. I also excel at analyzing and comprehending legacy codebases to strategically re-engineer systems if needed, with an implementation of documentation and modern best practices. I believe leveraging robust dependency management and version control workflows should be emphasized in order to best maintain codebase integrity and streamline ongoing development.",
+      copy: "I specialize in maintaining post-release software and engineering bug fixes to ensure security, efficiency, and alignment with user needs. I also excel at analyzing and comprehending legacy codebases to strategically re-engineer systems if needed, with a focus on implementing of documentation and modern best practices. I believe leveraging robust dependency management and version control workflows should be emphasized in order to best maintain codebase integrity and streamline ongoing development.",
     },
     {
       title: "Automated Testing",
