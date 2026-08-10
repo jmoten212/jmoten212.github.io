@@ -51,9 +51,9 @@ function QualityEngModal({ open, onClose }) {
         <Typography id="modal-description">
           As a Quality Engineer at Everfi, I tested course, component and SDK code primarily through automation. 
           I worked as part of the Course Automation Team, which was responsible for creating and running automated tests that served as the main aspect of integration and regression testing. 
-          For these automated tests we mainly used Cypress, creating E2E suites that simulated user flow through courses as part of component releases. 
-          We also used tools like Circle CI and GitHub Actions to run these tests for CI/CD and Applitools for visual assertion checks. In order to 
-          streamline the process of creating the Cypress test files, our team collaborated on a project to create a CLI tool to automate generation of Cypress test files from course structures. 
+          For these automated tests we mainly used Cypress, creating E2E suites that simulated user flow through courses as part of course and component releases. 
+          We also used tools like Circle CI and GitHub Actions to run these tests for CI/CD, and Applitools for visual assertion checks. In order to 
+          streamline the process of creating the Cypress test files, our team collaborated on a project to create a CLI tool that automated the generation of Cypress test files from course structures. 
           The tool took a reusable set of Cypress tests that were created to replicate component structures and placed them in a test file, mirroring how they appeared in the course by reading and 
           mapping through course structures. This work greatly reduced the amount of time and lift needed to test courses for releases 
           and had a significant impact on overall project delivery times.
