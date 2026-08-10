@@ -37,7 +37,7 @@ function ScrollCards() {
     },
     {
       title: "API Development",
-      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. My backend experience extends to data management, where I've designed data schemas in JSON and YAML formats and stored in various databases, including MongoDB, PostgreSQL and AWS database services. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls in order to enable building more stable and secure software.",
+      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. I have experience in designing data schemas in JSON and YAML, and utilizing a variety of databases for storage, including MongoDB, PostgreSQL and AWS database services. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls in order to enable building more stable and secure software.",
     },
   ];
 
