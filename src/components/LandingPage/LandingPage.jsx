@@ -10,6 +10,37 @@ CustomEase.create("hop2", "0.9, 0, 0.1, 1");
 
 const images = ["/images/lp-1.png", "/images/lp-2.png", "/images/lp-3.png", "/images/lp-4.png", "/images/lp-5.png", "/images/lp-6.png"];
 
+const waitForImages = (imagePaths, timeoutMs = 1800) => {
+  const loadPromises = imagePaths.map((src) => {
+    const image = new Image();
+    image.src = src;
+
+    return new Promise((resolve) => {
+      const complete = () => {
+        if (typeof image.decode === "function") {
+          image.decode().then(resolve).catch(resolve);
+        } else {
+          resolve();
+        }
+      };
+
+      if (image.complete) {
+        complete();
+        return;
+      }
+
+      image.addEventListener("load", complete, { once: true });
+      image.addEventListener("error", resolve, { once: true });
+    });
+  });
+
+  const timeoutPromise = new Promise((resolve) => {
+    window.setTimeout(resolve, timeoutMs);
+  });
+
+  return Promise.race([Promise.all(loadPromises), timeoutPromise]);
+};
+
 const splitText = (selector, type, className, mask = true) => {
   return SplitText.create(selector, {
     type,
@@ -20,6 +51,8 @@ const splitText = (selector, type, className, mask = true) => {
 
 function LandingPage() {
   useEffect(() => {
+    let isActive = true;
+
     const preloaderHeaderSplit = splitText(
       ".preloader-header h1",
       "chars",
@@ -32,7 +65,7 @@ function LandingPage() {
       rotate: (i) => preloaderImgInitRotations[i],
     });
 
-    const tl = gsap.timeline({ delay: 0.5 });
+    const tl = gsap.timeline({ delay: 0.5, paused: true });
 
     tl.to(".preloader-img", {
       scale: 1,
@@ -97,7 +130,16 @@ function LandingPage() {
       4.65,
     );
 
+    waitForImages(images).then(() => {
+      if (!isActive) {
+        return;
+      }
+
+      tl.play(0);
+    });
+
     return () => {
+      isActive = false;
       tl.kill();
       preloaderHeaderSplit.revert();
       headerSplit.revert();
@@ -113,7 +155,7 @@ function LandingPage() {
         <div className="preloader-images">
           {images.map((image) => (
             <div className="preloader-img" key={image}>
-              <img src={image} alt="" />
+              <img src={image} alt="" loading="eager" decoding="async" fetchPriority="high" />
             </div>
           ))}
         </div>

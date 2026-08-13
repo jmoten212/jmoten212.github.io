@@ -42,7 +42,7 @@ function RecentProjects() {
           {projects.map((project, index) => (
             <div key={index} className="recent-projects__slide">
               <div className="project-card">
-                <iframe src={project.href} frameborder="0"></iframe>
+                <iframe src={project.href}></iframe>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <a href={project.href} target="_blank" rel="noreferrer">
