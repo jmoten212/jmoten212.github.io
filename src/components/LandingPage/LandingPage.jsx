@@ -41,6 +41,24 @@ const waitForImages = (imagePaths, timeoutMs = 1800) => {
   return Promise.race([Promise.all(loadPromises), timeoutPromise]);
 };
 
+const waitForStableFrames = (frameCount = 2) => {
+  return new Promise((resolve) => {
+    let remaining = frameCount;
+
+    const tick = () => {
+      if (remaining <= 0) {
+        resolve();
+        return;
+      }
+
+      remaining -= 1;
+      requestAnimationFrame(tick);
+    };
+
+    requestAnimationFrame(tick);
+  });
+};
+
 const splitText = (selector, type, className, mask = true) => {
   return SplitText.create(selector, {
     type,
@@ -52,6 +70,15 @@ const splitText = (selector, type, className, mask = true) => {
 function LandingPage() {
   useEffect(() => {
     let isActive = true;
+
+    const setViewportHeightVar = () => {
+      const viewportHeight = window.visualViewport?.height || window.innerHeight;
+      document.documentElement.style.setProperty("--landing-vh", `${viewportHeight}px`);
+    };
+
+    setViewportHeightVar();
+    window.addEventListener("resize", setViewportHeightVar);
+    window.visualViewport?.addEventListener("resize", setViewportHeightVar);
 
     const preloaderHeaderSplit = splitText(
       ".preloader-header h1",
@@ -130,16 +157,20 @@ function LandingPage() {
       4.65,
     );
 
-    waitForImages(images).then(() => {
+    Promise.all([waitForImages(images), waitForStableFrames(2)]).then(() => {
       if (!isActive) {
         return;
       }
+
+      setViewportHeightVar();
 
       tl.play(0);
     });
 
     return () => {
       isActive = false;
+      window.removeEventListener("resize", setViewportHeightVar);
+      window.visualViewport?.removeEventListener("resize", setViewportHeightVar);
       tl.kill();
       preloaderHeaderSplit.revert();
       headerSplit.revert();
