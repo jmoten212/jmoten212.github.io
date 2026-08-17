@@ -25,19 +25,19 @@ function ScrollCards() {
   const cards = [
     {
       title: "Product Development",
-      copy: "I have extensive experience with developing software projects across the entire stack, from the component level to the system level. By focusing on efficiency and proper system flow, I work to ensure every product meets the set standards of design, quality and accessibility. Through previous work on a variety of projects, I've gained valuable experience working in collaboration with cross-functional teams, clients and key stakeholders. This has allowed me to consistently deliver feasible, high-quality builds that align with project goals.",
+      copy: "I have extensive experience with developing software projects across the entire stack, from the component level to the system level. By focusing on efficiency and proper system flow, I work to ensure every product meets the set standards of design, quality and accessibility. Through previous work on a variety of projects, I've gained valuable experience working in collaboration with cross-functional teams, clients, and key stakeholders. This has allowed me to consistently deliver feasible, high-quality builds that align with project goals.",
     },
     {
       title: "Code Maintenance",
-      copy: "I specialize in maintaining post-release software and engineering bug fixes that ensure security, efficiency, and alignment with user needs. I excel at analyzing and comprehending legacy codebases to strategically re-engineer systems, if needed. I believe leveraging robust dependency management and version control workflows should be emphasized in order to best maintain codebase integrity and streamline ongoing development.",
+      copy: "I specialize in maintaining post-release software and engineering bug fixes that ensure security, efficiency, and alignment with user needs. I also excel at analyzing and comprehending legacy codebases to strategically re-engineer systems, if needed. I believe leveraging robust dependency management and version control workflows should be emphasized in order to best maintain codebase integrity and streamline ongoing development.",
     },
     {
       title: "Automated Testing",
-      copy: "I am highly proficient in writing unit, integration and end-to-end automated tests across a variety of frameworks, including Mocha, Jest, Cypress, Playwright and Selenium. I have in-depth experience with executing and integrating tests into CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions. I believe this implementation provides necessary visibility into build stability, ensuring high-quality deployments while significantly reducing time-to-market.",
+      copy: "I am highly proficient in writing unit, integration, and end-to-end automated tests across a variety of frameworks, including Mocha, Jest, Cypress, Playwright and Selenium. I have in-depth experience with executing and integrating tests into CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions. I believe this implementation provides necessary visibility into build stability, ensuring high-quality deployments while significantly reducing time-to-market.",
     },
     {
       title: "API Development",
-      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. I have substantial experience in designing data schemas in JSON and YAML and utilizing a variety of databases for persistence, including MongoDB, PostgreSQL and AWS database services. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls to best enable building more stable and secure software.",
+      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. I have substantial experience in designing data schemas in JSON and YAML, and utilizing a variety of databases for persistence, including MongoDB, PostgreSQL and AWS database services. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls to best enable building more stable and secure software.",
     },
   ];
 

@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "NBA Playoffs Stat Tracker",
-    description: "A stats dashboard built around an Express API integration of a Rapid API meant to track the top players from the 2026 NBA Playoffs.",
+    description: "A stats dashboard built around an Express integration of a Rapid API meant to track the top players from the 2026 NBA Playoffs.",
     href: "https://jmoten212.github.io/nba-playoff-stats-api/"
   }
 ];
