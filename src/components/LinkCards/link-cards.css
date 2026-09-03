@@ -68,10 +68,17 @@
   margin-bottom: 20px;
 }
 
+#qe-modal-note,
 #modal-description {
   font-family: "Barlow Condensed", sans-serif;
   text-align: left;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+#qe-modal-note {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 20px;
 }

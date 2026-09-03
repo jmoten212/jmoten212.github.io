@@ -58,6 +58,9 @@ function QualityEngModal({ open, onClose }) {
           mapping through course structures. This work greatly reduced the amount of time and lift needed to test courses for releases 
           and had a significant impact on overall project delivery times.
         </Typography>
+        <Typography id="qe-modal-note">
+          (Note: The use of cy.wait in the recording is for demonstration purposes only, to prevent Cypress from clicking through too quickly. Typically assertions would be used for loading and state checking.)
+        </Typography>
       </Box>
     </Modal>
   );
