@@ -33,11 +33,11 @@ function ScrollCards() {
     },
     {
       title: "Automated Testing",
-      copy: "I am highly proficient in writing unit, integration, and end-to-end automated tests across a variety of frameworks, including Mocha, Jest, Cypress, Playwright and Selenium. I have in-depth experience with executing and integrating tests into CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions. I believe this implementation provides necessary visibility into build stability, ensuring high-quality deployments while significantly reducing time-to-market.",
+      copy: "I am highly proficient in writing automated test suites for various environments and stages of the testing lifecycle \u2014 unit, integration, e2e, regression, smoke, acceptance, component, API \u2014 and across a variety of frameworks \u2014 Mocha, Jest, Cypress, Playwright and Selenium. I also have in-depth experience with integrating test suites tests into CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions. I believe this implementation provides necessary visibility into build stability, ensuring high-quality deployments while significantly reducing time-to-market.",
     },
     {
       title: "API Development",
-      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. I have substantial experience in designing data schemas in JSON and YAML, and utilizing a variety of databases for persistence, including MongoDB, PostgreSQL and AWS database services. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls to best enable building more stable and secure software.",
+      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. I have substantial experience in designing data schemas in JSON and YAML, and utilizing a variety of databases for persistence, including MongoDB, PostgreSQL and AWS database services. I also have great experience in API testing, ________ . Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls to best enable building more stable and secure software.",
     },
   ];
 
