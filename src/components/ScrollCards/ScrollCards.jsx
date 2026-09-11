@@ -37,7 +37,7 @@ function ScrollCards() {
     },
     {
       title: "API Development",
-      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. I have substantial experience in designing data schemas in JSON and YAML, and utilizing a variety of databases for persistence, including MongoDB, PostgreSQL and AWS database services. I also have great experience in API testing, ________ . Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls to best enable building more stable and secure software.",
+      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. I have substantial experience in designing data schemas in JSON and YAML, and utilizing a variety of databases for persistence, including MongoDB, PostgreSQL and AWS database services. I also have considerable experience with API testing, having implemented checks for request validation, security, performance, data integrity, authentication and authorization. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls to best enable building more stable and secure software.",
     },
   ];
 
@@ -52,7 +52,7 @@ function ScrollCards() {
 
     ScrollTrigger.create({
       trigger: cards[0],
-      start: "top 35%",
+      start: "top 15%",
       endTrigger: cards[cards.length - 1],
       end: "top 30%",
       pin: introRef.current,
@@ -66,7 +66,7 @@ function ScrollCards() {
       if (!isLastCard) {
         ScrollTrigger.create({
           trigger: card,
-          start: "top 35%",
+          start: "top 20%",
           endTrigger: outroRef.current,
           end: "top 65%",
           pin: true,
@@ -78,7 +78,7 @@ function ScrollCards() {
           ease: "none",
           scrollTrigger: {
             trigger: card,
-            start: "top 35%",
+            start: "top 20%",
             endTrigger: outroRef.current,
             end: "top 65%",
             scrub: true,
