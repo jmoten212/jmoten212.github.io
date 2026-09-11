@@ -52,7 +52,7 @@ function ScrollCards() {
 
     ScrollTrigger.create({
       trigger: cards[0],
-      start: "top 15%",
+      start: "top 35%",
       endTrigger: cards[cards.length - 1],
       end: "top 30%",
       pin: introRef.current,
@@ -66,7 +66,7 @@ function ScrollCards() {
       if (!isLastCard) {
         ScrollTrigger.create({
           trigger: card,
-          start: "top 20%",
+          start: "top 35%",
           endTrigger: outroRef.current,
           end: "top 65%",
           pin: true,
@@ -78,7 +78,7 @@ function ScrollCards() {
           ease: "none",
           scrollTrigger: {
             trigger: card,
-            start: "top 20%",
+            start: "top 35%",
             endTrigger: outroRef.current,
             end: "top 65%",
             scrub: true,
