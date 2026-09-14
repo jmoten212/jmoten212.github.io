@@ -102,7 +102,7 @@
   will-change: transform;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .preloader-img {
     width: clamp(190px, 60vw, 320px);
     max-height: min(500px, calc(var(--landing-vh) * 0.45));
@@ -125,6 +125,17 @@
   .preloader-header h1 {
     font-size: 8vw;
     font-weight: 600;
+  }
+} */
+
+@media (max-width: 900px) {
+  .preloader-img {
+    width: min(84vw, 280px);
+    max-height: min(420px, calc(var(--landing-vh) * 0.42));
+  }
+
+  .preloader-img img {
+    object-position: center center;
   }
 }
 
