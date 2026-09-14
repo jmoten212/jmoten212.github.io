@@ -8,7 +8,7 @@ import "./intro.css";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-// ScrollTrigger.config({ ignoreMobileResize: true });
+ScrollTrigger.config({ ignoreMobileResize: true });
 // ScrollTrigger.normalizeScroll(true);
 
 function IntroScrollZoom() {
