@@ -90,8 +90,18 @@
     width: 75%;
   }
 
+  .svg-container {
+    display: grid;
+    place-items: center;
+  }
+
   .svg-container svg {
-    max-width: 95vw;
+    position: static;
+    transform: none;
+    max-width: 92vw;
+    height: auto;
+    margin-inline: auto;
+    display: block;
   }
 
   .spotlight-header {
