@@ -10,7 +10,7 @@ CustomEase.create("hop2", "0.9, 0, 0.1, 1");
 
 const images = ["/images/lp-1.png", "/images/lp-2.png", "/images/lp-3.png", "/images/lp-4.png", "/images/lp-5.png", "/images/lp-6.png"];
 
-const waitForImages = (imagePaths, timeoutMs = 1800) => {
+const waitForImages = (imagePaths, timeoutMs = 2400) => {
   const loadPromises = imagePaths.map((src) => {
     const image = new Image();
     image.src = src;

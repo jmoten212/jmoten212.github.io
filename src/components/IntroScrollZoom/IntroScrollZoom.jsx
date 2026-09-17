@@ -9,7 +9,7 @@ import "./intro.css";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 ScrollTrigger.config({ ignoreMobileResize: true });
-// ScrollTrigger.normalizeScroll(true);
+ScrollTrigger.normalizeScroll(true);
 
 function IntroScrollZoom() {
   const containerRef = useRef(null);
@@ -56,7 +56,7 @@ function IntroScrollZoom() {
       end: () => "+=" + window.innerHeight * 3,
       pin: true,
       pinSpacing: true,
-      scrub: true,
+      scrub: 0.5,
       onUpdate: (self) => {
         const progress = self.progress;
         const scale = 1 + progress * 2 * (settings.finalZoomScale - 1);
@@ -87,7 +87,7 @@ function IntroScrollZoom() {
         trigger: outroRef.current,
         start: "top top",
         end: () => "+=" + window.innerHeight * 1,
-        scrub: 1,
+        scrub: 0.5,
         pin: true,
         pinSpacing: false,
       },
