@@ -56,7 +56,7 @@ function IntroScrollZoom() {
       end: () => "+=" + window.innerHeight * 3,
       pin: true,
       pinSpacing: true,
-      scrub: 0.5,
+      scrub: 0.7,
       onUpdate: (self) => {
         const progress = self.progress;
         const scale = 1 + progress * 2 * (settings.finalZoomScale - 1);
@@ -87,7 +87,7 @@ function IntroScrollZoom() {
         trigger: outroRef.current,
         start: "top top",
         end: () => "+=" + window.innerHeight * 1,
-        scrub: 0.5,
+        scrub: 0.7,
         pin: true,
         pinSpacing: false,
       },
