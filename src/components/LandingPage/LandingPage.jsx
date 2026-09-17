@@ -10,7 +10,7 @@ CustomEase.create("hop2", "0.9, 0, 0.1, 1");
 
 const images = ["/images/lp-1.png", "/images/lp-2.png", "/images/lp-3.png", "/images/lp-4.png", "/images/lp-5.png", "/images/lp-6.png"];
 
-const waitForImages = (imagePaths) => {
+const waitForImages = (imagePaths, timeoutMs = 1800) => {
   const loadPromises = imagePaths.map((src) => {
     const image = new Image();
     image.src = src;
@@ -34,17 +34,11 @@ const waitForImages = (imagePaths) => {
     });
   });
 
-  return Promise.all(loadPromises);
-};
-
-const waitForWindowLoad = () => {
-  if (document.readyState === "complete") {
-    return Promise.resolve();
-  }
-
-  return new Promise((resolve) => {
-    window.addEventListener("load", resolve, { once: true });
+  const timeoutPromise = new Promise((resolve) => {
+    window.setTimeout(resolve, timeoutMs);
   });
+
+  return Promise.race([Promise.all(loadPromises), timeoutPromise]);
 };
 
 const waitForStableFrames = (frameCount = 2) => {
@@ -170,21 +164,14 @@ function LandingPage() {
       4.65,
     );
 
-    Promise.all([waitForImages(images), waitForWindowLoad(), waitForStableFrames(2)]).then(() => {
+    Promise.all([waitForImages(images), waitForStableFrames(2)]).then(() => {
       if (!isActive) {
         return;
       }
 
       setViewportHeightVar();
 
-      requestAnimationFrame(() => {
-        if (!isActive) {
-          return;
-        }
-
-        setViewportHeightVar();
-        tl.play(0);
-      });
+      tl.play(0);
     });
 
     return () => {
