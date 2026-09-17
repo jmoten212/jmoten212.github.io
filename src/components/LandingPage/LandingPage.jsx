@@ -93,15 +93,20 @@ function LandingPage() {
     );
     const headerSplit = splitText(".header h1", "chars", "char", false);
 
-    const preloaderImgInitRotations = [7.5, -2.5, -10, 5, -5];
+    const preloaderImgInitRotations = [7.5, -2.5, -10, 5, -5, 0];
     gsap.set(".preloader-img", {
+      xPercent: -50,
+      yPercent: -50,
       rotate: (i) => preloaderImgInitRotations[i],
+      scale: 0,
     });
 
     const tl = gsap.timeline({ delay: 0.5, paused: true });
 
     tl.to(".preloader-img", {
       scale: 1,
+      xPercent: -50,
+      yPercent: -50,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       duration: 1,
       ease: "hop",
@@ -134,6 +139,8 @@ function LandingPage() {
       ".preloader-images .preloader-img",
       {
         scale: 0,
+        xPercent: -50,
+        yPercent: -50,
         clipPath: "polygon(20% 20%, 80% 20%, 80% 80%, 20% 80%)",
         duration: 1,
         ease: "hop2",
