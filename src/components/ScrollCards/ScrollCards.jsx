@@ -25,7 +25,7 @@ function ScrollCards() {
   const cards = [
     {
       title: "Product Development",
-      copy: "I have extensive experience with developing software projects across the entire stack, from the component level to the system level. By focusing on efficiency and proper system flow, I work to ensure every product meets the set standards of design, quality and accessibility. Through previous work on a variety of projects, I've gained valuable experience working in collaboration with cross-functional teams, clients, and key stakeholders. This has allowed me to consistently deliver feasible, high-quality builds that align with project goals.",
+      copy: "I have experience with developing software projects across the entire stack, from the component level to the system level. By focusing on efficiency and proper system flow, I work to ensure every product meets the set standards of design, quality, and accessibility. Through previous work on a variety of projects, I've gained valuable experience working in collaboration with cross-functional teams, clients, and key stakeholders. This has allowed me to consistently deliver feasible, high-quality builds that align with project goals.",
     },
     {
       title: "Code Maintenance",
@@ -33,11 +33,11 @@ function ScrollCards() {
     },
     {
       title: "Automated Testing",
-      copy: "I am highly proficient in writing automated test suites for various environments and stages of the testing lifecycle \u2014 unit, integration, e2e, regression, smoke, acceptance, component, API \u2014 and across a variety of frameworks \u2014 Mocha, Jest, Cypress, Playwright and Selenium. I also have in-depth experience with integrating test suites tests into CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions. I believe this implementation provides necessary visibility into build stability, ensuring high-quality deployments while significantly reducing time-to-market.",
+      copy: "I am proficient in writing automated test suites for various environments and stages of the testing lifecycle \u2014 unit, integration, e2e, regression, smoke, acceptance, component, API \u2014 and across a variety of frameworks \u2014 Mocha, Jest, Cypress, Playwright and Selenium. I also have in-depth experience with integrating test suites tests into CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions. I believe this implementation provides necessary visibility into build stability, ensuring high-quality deployments while significantly reducing time-to-market.",
     },
     {
       title: "API Development",
-      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. I have substantial experience in designing data schemas in JSON and YAML, and utilizing a variety of databases for persistence, including MongoDB, PostgreSQL and AWS database services. I also have considerable experience with API testing, having implemented checks for request validation, security, performance, data integrity, authentication and authorization. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls to best enable building more stable and secure software.",
+      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. I have experience in designing data schemas in JSON and YAML, and utilizing a variety of databases for persistence, including MongoDB, PostgreSQL and AWS database services. I also have experience with API testing, having implemented checks for request validation, security, performance, data integrity, authentication and authorization. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls to best enable building more stable and secure software.",
     },
   ];
 
