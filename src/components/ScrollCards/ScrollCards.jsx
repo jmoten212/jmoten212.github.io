@@ -100,8 +100,8 @@ function ScrollCards() {
           <h1>Who Am I?</h1>
           <p>
             A performance-driven Software Engineer with 5+ years of professional experience in full-stack development 
-            and automated testing for large-scale SaaS platforms, proficient in debugging and maintaining React, 
-            TypeScript, JavaScript, and Node-based applications and APIs. An eager learner and active contributor who 
+            and automated testing who is proficient in debugging and maintaining React, TypeScript, JavaScript, and Node-based 
+            applications and APIs for large-scale SaaS platforms. An eager learner and active contributor who 
             is dedicated to elevating user and developer experience through reliable, well-tested software. Below are a 
             few core areas that further highlight my technical background:
           </p>
