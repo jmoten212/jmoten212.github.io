@@ -29,15 +29,15 @@ function ScrollCards() {
     },
     {
       title: "Code Maintenance",
-      copy: "I specialize in maintaining post-release software and engineering bug fixes that ensure security, efficiency, and alignment with user needs. I also excel at analyzing and comprehending legacy codebases to strategically re-engineer systems, if needed. I believe leveraging robust dependency management and version control workflows should be emphasized in order to best maintain codebase integrity and streamline ongoing development.",
+      copy: "I specialize in maintaining post-release software by engineering bug fixes that ensure security, efficiency, and alignment with user needs. I have experience with analyzing and comprehending legacy codebases as well, and am comfortable working to strategically re-engineer systems, if needed. I believe leveraging dependency management and version control workflows should be emphasized in order to best streamline development and maintain codebase stability.",
     },
     {
       title: "Automated Testing",
-      copy: "I am proficient in writing automated test suites for various environments and stages of the testing lifecycle \u2014 unit, integration, e2e, regression, smoke, acceptance, component, API \u2014 and across a variety of frameworks \u2014 Mocha, Jest, Cypress, Playwright and Selenium. I also have in-depth experience with integrating test suites tests into CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions. I believe this implementation provides necessary visibility into build stability, ensuring high-quality deployments while significantly reducing time-to-market.",
+      copy: "I am proficient in writing automated test suites for various environments and stages of the testing lifecycle \u2014 unit, integration, e2e, regression, smoke, acceptance, component, API \u2014 and across a variety of frameworks \u2014 Mocha, Jest, Cypress, Playwright and Selenium. I also have in-depth experience with integrating test suites tests into CI/CD pipelines, most frequently utilizing CircleCI and GitHub Actions. I believe this can provide necessary visibility into build quality and stability, ensuring better deployments and reducing time-to-market.",
     },
     {
       title: "API Development",
-      copy: "I excel at creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript. I have experience in designing data schemas in JSON and YAML, and utilizing a variety of databases for persistence, including MongoDB, PostgreSQL and AWS database services. I also have experience with API testing, having implemented checks for request validation, security, performance, data integrity, authentication and authorization. Throughout development, I believe a strong emphasis should be placed on seamless system integration, optimized data bundling, and enhanced security controls to best enable building more stable and secure software.",
+      copy: "I have in-depth experience with creating and maintaining secure, high-performance Webhooks and RESTful APIs in both TypeScript and JavaScript; this includes experience in designing data schemas in JSON and YAML, and utilizing databases like MongoDB, PostgreSQL, and AWS database services for persistence. Having implemented checks for request validation, security, performance, data integrity, authentication and authorization, I am also skilled in API and database testing. I believe a strong emphasis should be placed on testing throughout development to best ensure API security, stability, and design alignment.",
     },
   ];
 
@@ -100,7 +100,7 @@ function ScrollCards() {
           <h1>Who Am I?</h1>
           <p>
             A performance-driven Software Engineer with 5+ years of professional experience in full-stack development 
-            and automated testing who is proficient in debugging and maintaining React, TypeScript, JavaScript, and Node-based 
+            and automated testing; proficient in debugging and maintaining React, TypeScript, JavaScript, and Node-based 
             applications and APIs for large-scale SaaS platforms. An eager learner and active contributor who 
             is dedicated to elevating user and developer experience through reliable, well-tested software. Below are a 
             few core areas that further highlight my technical background:
