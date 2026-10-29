@@ -47,7 +47,7 @@ function CourseMaintModal({ open, onClose }) {
           Course Maintenance
         </Typography>
         <Typography id="modal-description">
-          As an Engineer on the Course Maintenance Team at Everfi, I managed code and fixed bugs within the SDK and component 
+          As an Developer on the Course Maintenance Team at Everfi, I managed code and fixed bugs within the SDK and component 
           libraries that contributed to course builds. The work was in close collaboration with the Quality Engineering Team, 
           taking bugs that they found and reported, and deploying fixes for them within component releases. 
           Our work responsibilities also included API maintenance and resolving issues with Webhooks and RESTful APIs for user and course data. 

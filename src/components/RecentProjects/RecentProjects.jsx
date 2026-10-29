@@ -6,7 +6,7 @@ import "./recent-projects.css";
 const projects = [
   {
     title: "World Cup Web Scraper",
-    description: "(Work In Progress) A web scraper built with Node and Playwright + a REST API built with Express and PostgreSQL that scrapes ESPN stats for the 2026 FIFA World Cup.",
+    description: "A web scraper built with Node and Playwright + a REST API built with Express and PostgreSQL that scrapes ESPN stats for the 2026 FIFA World Cup.",
     href: "https://jmoten212.github.io/world-cup-web-scraper/"
   },
   {
